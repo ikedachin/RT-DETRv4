@@ -153,6 +153,6 @@ if __name__ == '__main__':
     parser.add_argument('-c', '--config', type=str, required=True)
     parser.add_argument('-r', '--resume', type=str, required=True)
     parser.add_argument('-i', '--input', type=str, required=True)
-    parser.add_argument('-d', '--device', type=str, default='cpu')
+    parser.add_argument('-d', '--device', type=str, default='cpu', help='Device to use for inferencec. ex: cpu, cuda:0, MPS')
     args = parser.parse_args()
     main(args)
